@@ -1,3 +1,5 @@
+import loadHtml from "./source";
+
 // 创建微应用
 export default class CreateApp {
   constructor({ name, url, container }) {
@@ -5,6 +7,7 @@ export default class CreateApp {
     this.url = url; // 应用url地址
     this.container = container; // 应用挂在的micro-app元素
     this.status = "loading";
+    loadHtml(this);
   }
 
   status = "created";
