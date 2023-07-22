@@ -2,7 +2,7 @@ import { defineElement } from "./element";
 
 const MiniMicroApp = {
   start() {
-    defineElement;
+    defineElement();
   },
 };
 
